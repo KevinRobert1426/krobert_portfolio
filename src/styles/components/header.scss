@@ -61,9 +61,17 @@
     color: var(--color-black);
     text-transform: uppercase;
     font-style: italic;
+    transition-duration: 0.3s;
+	transition-property: transform;
 
     @media screen and (min-width: $breakpoint-sm) {
         display: block;
+    }
+
+    &:hover {
+        transform: scale(1.1) rotate(4deg);
+        text-decoration: none;
+        color: var(--color-black);
     }
 }
 
@@ -195,48 +203,21 @@
     text-align: center;
     font-weight: 500;
     font-style: italic;
-
-    &::before {
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 20px;
-        height: 2px;
-        width: calc(100% - 40px);
-        content: '';
-        background-color: black;
-        transform: scaleX(0);
-        transition: 0.3s all;
-    }
+    background-image: linear-gradient(to right, var(--color-secondary) 0, var(--color-secondary) 100%);
+    background-position: 0 0.3em;
+    background-size: 0 40%;
+    background-repeat: no-repeat;
+    transition: background .5s;
 
     &:hover {
-        color: inherit;
+        background-size: 100% 40%;
+        color: var(--color-black);
+        text-decoration: none;
     }
 
     @media screen and (min-width: $breakpoint-ml) {
-        padding: 0 15px;
+        padding: 0 31px;
         position: relative;
-
-        &::before {
-            display: block;
-            position: absolute;
-            top: 100%;
-            left: 20px;
-            height: 2px;
-            width: calc(100% - 40px);
-            content: '';
-            background-color: black;
-            transform: scaleX(0);
-            transition: 0.3s all;
-        }
-
-        &:hover {
-            text-decoration: none;
-            color: inherit;
-            &::before {
-                transform: scaleX(1);
-            }
-        }
     }
 }
 
