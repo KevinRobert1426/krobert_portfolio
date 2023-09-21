@@ -1,23 +1,26 @@
 .header {
-    --header-height: 100px;
+    --header-height: 60px;
     --logo-width: 54px;
     z-index: 10;
     position: sticky;
     top: 0;
     left: 0;
     transition: all 0.4s $ease-out-expo;
+    margin: 20px 0;
 
     .wrapper {
         display: flex;
         justify-content: space-between;
-        padding: 0 2rem;
+        padding: 1rem 10rem;
         align-items: center;
         width: 100%;
         height: var(--header-height);
+        border-top: 2px solid var(--color-black);
+        border-bottom: 2px solid var(--color-black);
     }
 
     &::before {
-        background-color: var(--color-white);
+        background-color: none;
         content: '';
         position: absolute;
         top: 0;
@@ -52,10 +55,12 @@
 
 .logo {
     font-family: var(--font-primary);
-    font-size: 4rem;
-    font-weight: 900;
+    font-size: var(--font-size-nav);
+    font-weight: 700;
     display: none;
-    color: #444;
+    color: var(--color-black);
+    text-transform: uppercase;
+    font-style: italic;
 
     @media screen and (min-width: $breakpoint-sm) {
         display: block;
@@ -124,7 +129,6 @@
 }
 
 .nav-primary {
-    background-color: var(--color-white);
     position: absolute;
     top: 0;
     left: 0;
@@ -138,6 +142,7 @@
     transform: translateY(200%);
 
     @media screen and (min-width: $breakpoint-ml) {
+        background-color: none;
         transform: none;
         position: relative;
         height: auto;
@@ -182,14 +187,14 @@
 }
 
 .nav-primary__item {
-    font-size: 1.4rem;
-    color: #18191f;
-    text-transform: uppercase;
-    padding: 0 25px;
+    font-size: var(--font-size-nav);
+    color: var(--color-black);
+    padding: 0 31px;
     position: relative;
     display: block;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
+    font-style: italic;
 
     &::before {
         display: block;
@@ -209,7 +214,7 @@
     }
 
     @media screen and (min-width: $breakpoint-ml) {
-        padding: 0 25px;
+        padding: 0 15px;
         position: relative;
 
         &::before {
@@ -232,15 +237,6 @@
                 transform: scaleX(1);
             }
         }
-    }
-}
-
-.intersection {
-    font-size: var(--font-size-nav);
-    display: none;
-
-    @media screen and (min-width: $breakpoint-ml) {
-        display: block;
     }
 }
 

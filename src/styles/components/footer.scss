@@ -1,10 +1,6 @@
 .footer {
-    background-color: var(--color-black);
-    padding: 24px 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    background-color: var(--color-bg-primary);
+    padding: 50px 0;
     color: var(--color-white);
     text-align: center;
 
@@ -23,14 +19,21 @@
     p {
         order: 4;
     }
+
+    .wrapper {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
-.footer::before {
+.footer .wrapper::before {
     display: block;
     height: 2px;
     width: 1110px;
     content: '';
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--color-white);
     order: 2;
 }
 
@@ -39,7 +42,7 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    gap: 16px;
+    gap: 42px;
 
     li {
         list-style: none;
@@ -55,7 +58,7 @@
             transition: 0.3s all;
 
             &:hover {
-                color: var(--color-primary);
+                color: var(--color-secondary);
                 scale: 1.25;
             }
         }
