@@ -20,7 +20,7 @@
     }
 
     &::before {
-        background-color: none;
+        background: none;
         content: '';
         position: absolute;
         top: 0;
@@ -138,6 +138,7 @@
 
 .nav-primary {
     position: absolute;
+    background-color: var(--color-white);
     top: 0;
     left: 0;
     width: 100%;
@@ -150,7 +151,7 @@
     transform: translateY(200%);
 
     @media screen and (min-width: $breakpoint-ml) {
-        background-color: none;
+        background: none;
         transform: none;
         position: relative;
         height: auto;
