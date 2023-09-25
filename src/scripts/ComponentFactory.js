@@ -1,6 +1,5 @@
 import Header from './components/Header';
 import Carousel from './components/Carousel';
-import YouTube from './components/YouTube';
 
 export default class ComponentFactory {
   constructor() {
@@ -8,7 +7,6 @@ export default class ComponentFactory {
     this.componentList = {
       Header,
       Carousel,
-      YouTube,
     };
     this.init();
   }

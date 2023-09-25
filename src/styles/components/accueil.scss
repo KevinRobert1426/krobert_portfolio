@@ -1,6 +1,6 @@
 .accueil {
     height: 987px;
-    padding: 100px 0;
+    padding: 70px 0;
     .wrapper-large {
         position: relative;
     }
@@ -20,13 +20,13 @@
     }
 }
 
-.accueil-absolute{
+.accueil-absolute {
     position: absolute;
-    bottom: 10%;
+    bottom: 7%;
     left: 0;
     width: 100%;
 
-    .wrapper{
+    .wrapper {
         display: flex;
         justify-content: flex-end;
     }
