@@ -1,0 +1,16 @@
+.hero {
+    padding-top: 100px;
+    display: flex;
+
+    img {
+        max-width: 623px;
+    }
+}
+
+.hero-content {
+    max-width: 1140px;
+
+    .titre {
+        margin-bottom: 65px;
+    }
+}
