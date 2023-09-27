@@ -9,7 +9,7 @@
     }
 }
 .hero::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 9.5%;
     right: 0;
@@ -29,8 +29,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    img{
+
+    img {
         height: fit-content;
     }
 }
@@ -38,5 +38,87 @@
 .resume {
     h2 {
         margin-bottom: 100px;
+    }
+
+    padding-bottom: 200px;
+}
+
+.loisirs {
+    padding: 100px 0;
+    background-color: var(--color-bg-secondary);
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            position: absolute;
+            bottom: 102%;
+            right: 0;
+            background-color: var(--color-bg-secondary);
+            padding: 10px 100px;
+            border-radius: 25px 25px 0 0;
+        }
+    }
+
+    .image {
+        border: 2px solid var(--color-black);
+        object-fit: cover;
+    }
+}
+
+.loisir-1 {
+    margin-left: 100px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: end;
+
+    .image {
+        width: 100%;
+        max-height: 340px;
+    }
+
+    .legende-graffiti {
+        max-width: 530px;
+        height: 144px;
+    }
+}
+
+.loisir-2 {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    max-width: 400px;
+
+    .image {
+        rotate: 4deg;
+        aspect-ratio: 1 / 1;
+        object-position: 0 100%;
+        max-width: 395px;
+    }
+
+    .legende-graffiti {
+        max-width: 518px;
+        height: 184px;
+    }
+}
+
+.loisir-3 {
+    max-width: 489px;
+    display: flex;
+    flex-direction: column;
+
+    .image {
+        rotate: 4deg;
+        object-position: 0 100%;
+        max-width: 100%;
+    }
+
+    .legende-graffiti {
+        max-width: 487px;
+        rotate: 6deg;
     }
 }
