@@ -1,0 +1,22 @@
+<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_3253_331)">
+<mask id="mask0_3253_331" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="4" width="67" height="67">
+<path d="M4 4.00002H71V71H4V4.00002Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_3253_331)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4 4.00002H71V71H4V4.00002ZM55.2187 60.1684C52.1116 60.1684 50.3556 58.5492 49.0072 56.3438L43.8901 59.3169C45.7382 62.9684 49.5153 65.7545 55.3639 65.7545C61.3436 65.7545 65.7963 62.6501 65.7963 56.9803C65.7963 51.7236 62.7757 49.3869 57.4269 47.0894L55.8524 46.4166C53.1501 45.2441 51.9804 44.482 51.9804 42.592C51.9804 41.065 53.1529 39.8953 54.9954 39.8953C56.8016 39.8953 57.9657 40.6574 59.0461 42.592L63.9483 39.4458C61.874 35.7971 58.9986 34.4041 54.9954 34.4041C49.373 34.4041 45.7745 37.9997 45.7745 42.7232C45.7745 47.8459 48.7895 50.2719 53.3343 52.2065L54.9088 52.8821C57.7815 54.1383 59.4928 54.9033 59.4928 57.0612C59.4928 58.8646 57.8261 60.1684 55.2187 60.1684ZM30.8195 60.1265C28.656 60.1265 27.7543 58.6469 26.766 56.8881L21.6405 59.9925C23.1257 63.1359 26.0458 65.7433 31.0847 65.7433C36.6653 65.7433 40.4871 62.7758 40.4871 56.2572V34.7614H34.1919V56.1735C34.1919 59.3197 32.8854 60.1265 30.8167 60.1265H30.8195Z" fill="black"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_i_3253_331" x="0" y="1.52588e-05" width="75" height="77" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_3253_331"/>
+</filter>
+</defs>
+</svg>
