@@ -20,7 +20,6 @@
     display: flex;
     flex-direction: column;
 
-
     h4 {
         max-width: 690px;
         margin-bottom: 10px;
@@ -111,13 +110,18 @@
     display: flex;
     flex-direction: column;
     gap: 106px;
+
+    img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
 }
 
 /* ==========================================================================
    Fiche projet inverse
    ========================================================================== */
 
-.projet:nth-child(2n+1){
+.projet:nth-child(2n + 1) {
     align-items: end;
     .projet-flex {
         flex-direction: row-reverse;
@@ -136,7 +140,7 @@
             right: 0;
             width: 120%;
         }
-    } 
+    }
 
     .projet-header {
         flex-direction: row-reverse;
