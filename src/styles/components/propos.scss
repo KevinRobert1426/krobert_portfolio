@@ -1,4 +1,4 @@
-.hero {
+.hero-propos {
     position: relative;
     padding: 100px 0 100px 0;
     display: flex;
@@ -8,7 +8,7 @@
         max-width: 623px;
     }
 }
-.hero::after {
+.hero-propos::after {
     content: '';
     position: absolute;
     bottom: 9.5%;
@@ -16,13 +16,13 @@
     height: 2px;
     width: 60%;
     background-color: var(--color-black);
-}
 
-.hero-content {
-    max-width: 1140px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    .hero-content {
+        max-width: 1140px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
 }
 
 .graffiti {
@@ -74,7 +74,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: end;
+    align-items: flex-end;
 
     .image {
         width: 100%;
@@ -89,7 +89,7 @@
 
 .loisir-2 {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     gap: 20px;
     max-width: 400px;
 

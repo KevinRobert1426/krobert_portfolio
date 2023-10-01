@@ -1,3 +1,8 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
 .card {
     position: relative;
     color: var(--color-white);
@@ -79,9 +84,4 @@
     position: absolute;
     top: -88px;
     right: -265px;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-between;
 }

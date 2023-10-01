@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero-projet {
+    position: relative;
+    height: 680px;
+
+    img {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 60%;
+        z-index: -1;
+    }
+
+    .wrapper {
+        height: 100%;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h1 {
+            color: var(--color-white);
+        }
+
+        .tagline {
+            margin-left: initial;
+        }
+    }
+}
+
+/* ==========================================================================
+   Section information
+   ========================================================================== */
+
+.info-projet {
+    padding-top: 170px;
+
+    .info-flex {
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card-margin-left {
+            padding: 0 0 100px 0;
+            max-width: 600px;
+        }
+
+        .legende-absolute {
+            padding: 12px 20px;
+            top: -50px;
+        }
+
+        .absolute-bottom {
+            top: initial;
+            bottom: -46px;
+            right: -92px;
+        }
+
+        .card-secondaire {
+            position: initial;
+            margin-top: -50px;
+            z-index: 3;
+
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    .info-flex:nth-child(2n) {
+        .card-margin-left {
+            margin-left: 320px;
+        }
+        .card-secondaire {
+            margin-top: -100px;
+            max-width: 672px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Section Integration 
+   ========================================================================== */
+
+.integration {
+    .card {
+        max-width: 990px;
+        margin-bottom: 50px;
+    }
+}
