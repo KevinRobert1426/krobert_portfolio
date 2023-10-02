@@ -28,10 +28,23 @@
                     </ul>
                 </div>
             </div>
+
+            <video src="assets/videos/Kevin_Robert_Anim_TP2.mp4" loop="loop" autoplay="autoplay" muted playsinline></video>
         </div>
 
         <div class="info-flex">
-            <div></div>
+            <div class="swiper-legende">
+                <h3 class="legende">Galerie</h3>
+                <div class="carousel swiper swiper-galerie" data-component="Carousel" data-loop data-gap="0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/images/code_baie-sainte-catherine.jpg" alt="Code" /></div>
+                        <div class="swiper-slide"><img src="assets/images/calendrier_baie-sainte-catherine" alt="Calendrier" /></div>
+                        <div class="swiper-slide"><img src="assets/images/acordeon_baie-sainte-catherine.jpg" alt="Acordéon" /></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
             <div>
                 <div class="card card-margin-left">
                     <h3 class="legende">Processus créatif</h3>
@@ -58,9 +71,61 @@
                 Grâce à VS Code et GitHub, j’ai développé cette page avec HTML, CSS et JavaScript. L’entièreté du site est responsive et comporte des animations
                 en scrolly.
             </p>
-
-            <div class="flex-modal"></div>
         </div>
+
+        <div class="flex-modal">
+            <div class="modal-conteneur" data-component="Modal">
+                <svg class="icon icon--md">
+                    <use xlink:href="#icon-zoom"></use>
+                </svg>
+                <img src="assets/images/code_baie-sainte-catherine.jpg" alt="Code HTML" class="modal-image" />
+                <p>Exemple de sctructure HTML</p>
+                <div class="modal">
+                    <img src="assets/images/code_baie-sainte-catherine.jpg" alt="Code HTML" class="modal-content" />
+                </div>
+            </div>
+
+            <div class="modal-conteneur" data-component="Modal">
+                <svg class="icon icon--md">
+                    <use xlink:href="#icon-zoom"></use>
+                </svg>
+                <img src="assets/images/code-scss.jpg" alt="Code SCSS" class="modal-image" />
+                <p>Exemple de sctructure SCSS</p>
+                <div class="modal">
+                    <img src="assets/images/code-scss.jpg" alt="Code HTML" class="modal-content" />
+                </div>
+            </div>
+
+            <div class="modal-conteneur" data-component="Modal">
+                <svg class="icon icon--md">
+                    <use xlink:href="#icon-zoom"></use>
+                </svg>
+                <img src="assets/images/code-javascript.jpg" alt="Code JavaScript" class="modal-image" />
+                <p>Exemple de JavaScript</p>
+                <div class="modal">
+                    <img src="assets/images/code-javascript.jpg" alt="Code HTML" class="modal-content" />
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-legende">
+            <h3 class="legende">Responsive</h3>
+            <div class="carousel swiper swiper-responsive" data-component="Carousel" data-loop data-gap="0">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/cell1_baie-sainte-catherine.png" alt="Cellulaire" />
+                        <img src="assets/images/cell2_baie-sainte-catherine.png" alt="Cellulaire" />
+                        <img src="assets/images/cell3_baie-sainte-catherine.png" alt="Cellulaire" />
+                    </div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">Visiter le site web</a>
     </div>
 </section>
 {% include '_partials/_footer.html' %}

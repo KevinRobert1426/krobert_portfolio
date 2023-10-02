@@ -44,6 +44,10 @@
         justify-content: space-between;
         align-items: center;
 
+        .swiper {
+            margin: 0;
+        }
+
         .card-margin-left {
             padding: 0 0 100px 0;
             max-width: 600px;
@@ -69,6 +73,12 @@
                 content: none;
             }
         }
+
+        video {
+            max-width: 676px;
+            border: 2px solid var(--color-black);
+            transform: rotate(-5.75deg);
+        }
     }
 
     .info-flex:nth-child(2n) {
@@ -90,5 +100,37 @@
     .card {
         max-width: 990px;
         margin-bottom: 50px;
+    }
+
+    .btn {
+        display: block;
+        margin: 0 auto 110px;
+        transform: rotate(4.5deg);
+    }
+}
+
+.flex-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-conteneur {
+    position: relative;
+    width: fit-content;
+
+    .icon {
+        position: absolute;
+        z-index: 2;
+        color: var(--color-white);
+        right: 20px;
+        top: 20px;
+        pointer-events: none;
+    }
+
+    p {
+        margin: 0;
+        padding: 0 20px;
+        background-color: var(--color-primary);
+        box-shadow: 13px 11px 4px 0px #000;
     }
 }

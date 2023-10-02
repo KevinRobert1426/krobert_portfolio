@@ -33,3 +33,41 @@
         display: block;
     }
 }
+
+.swiper-legende {
+    position: relative;
+    .legende {
+        position: absolute;
+    }
+}
+
+.swiper-galerie {
+    max-width: 550px;
+    aspect-ratio: 1/1;
+    margin: 0;
+    border: 2px solid var(--color-black);
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.swiper-responsive {
+    margin: 175px 0 120px;
+    border: 2px solid var(--color-black);
+    height: 715px;
+
+    .swiper-slide {
+        background-color: #bfbfbf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 175px;
+
+        img {
+            width: initial;
+        }
+    }
+}
