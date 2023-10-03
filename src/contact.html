@@ -40,7 +40,33 @@
         </div>
 
         <div class="form">
-            <p>Il y aura un formulaire WordPress</p>
+            <form action="" class="form" autocomplete="off" data-component="Form">
+                <div class="form__body">
+                    <fieldset class="grid">
+                        <div class="input">
+                            <label class="input__label" for="fullname">Nom</label>
+                            <input class="input__element" type="text" name="fullname" id="fullname" placeholder="ex.: Kevin" required />
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="email">Adresse courriel</label>
+                            <input class="input__element" type="email" name="email" id="email" placeholder="exemple@courriel.com" required />
+                        </div>
+
+                        <div class="input textarea u-grid-fullwidth">
+                            <label class="input__label" for="comment">Message</label>
+                            <textarea class="input__element" name="comment" id="comment" required></textarea>
+                        </div>
+                    </fieldset>
+                    <footer class="form__footer">
+                        <button class="btn">Envoyer</button>
+                    </footer>
+                </div>
+                <div class="form__confirmation">
+                    <h2>Merci</h2>
+                    <p>Votre formulaire a bien été envoyé.</p>
+                </div>
+            </form>
         </div>
     </div>
 </section>

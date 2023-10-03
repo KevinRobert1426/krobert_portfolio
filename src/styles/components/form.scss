@@ -1,0 +1,123 @@
+/* ==========================================================================
+   form / component
+   ========================================================================== */
+
+.form {
+    width: 100%;
+    --input-radius: 3px;
+    --input-padding: 1em;
+
+    fieldset {
+        border: none;
+        padding: 0;
+    }
+
+    .grid {
+        display: grid;
+        gap: var(--spacing-md);
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.form__body {
+    .is-sent & {
+        display: none;
+    }
+
+    .btn {
+        margin-top: 50px;
+        transform: rotate(-4.5deg);
+    }
+}
+
+.form__confirmation {
+    display: none;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .is-sent & {
+        display: block;
+    }
+}
+
+/*
+   input
+   ========================================================================== */
+.input__label {
+    display: block;
+    font-family: var(--font-primary);
+    font-weight: 600;
+}
+
+.input__element {
+    background-color: #d9d9d9;
+    box-shadow: 13px 11px 4px 0px var(--color-black);
+    cursor: pointer;
+    font-family: inherit;
+    outline: none;
+    padding: var(--input-padding);
+    width: 100%;
+    transition: 0.3s all;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:active {
+        -webkit-box-shadow: inset 0 0 0 30px var(--color-white) !important;
+        -webkit-text-fill-color: inherit !important;
+    }
+
+    // hover
+    &:hover,
+    + .input__label:hover::before {
+        background-color: #bfbfbf;
+        -webkit-box-shadow: inset 0 0 0 30px #bfbfbf !important;
+    }
+
+    // focus
+    &:focus,
+    &:-webkit-autofill:focus,
+    &:focus + .input__label::before {
+        background-color: var(--color-secondary);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: inset 0 0 0 30px var(--color-secondary) !important;
+    }
+
+    // autocomplete
+    &::placeholder {
+        color: var(--color-bg-primary);
+    }
+}
+
+/*
+   textarea
+   ========================================================================== */
+
+.textarea {
+    .input__element {
+        resize: vertical;
+        height: 200px;
+    }
+}
+/*
+   error
+   ========================================================================== */
+
+.error {
+    .input__element,
+    &.checkbox .input__label::before,
+    &.radio .input__label::before,
+    .checkbox .input__label::before,
+    .radio .input__label::before {
+        box-shadow: inset 0 0 0 3px red;
+    }
+
+    .input__label {
+        color: red;
+    }
+}
