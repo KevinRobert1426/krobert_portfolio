@@ -65,9 +65,11 @@
         }
 
         .card-secondaire {
-            position: initial;
+            position: relative;
             margin-top: -50px;
             z-index: 3;
+            left: unset;
+            bottom: unset;
 
             &::before {
                 content: none;

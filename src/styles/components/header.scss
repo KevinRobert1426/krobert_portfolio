@@ -37,6 +37,12 @@
     .header-is-hidden.is-scrolling-down & {
         transform: translateY(-100%) translateY(4px);
     }
+
+    .is-scrolling-up &{
+        background: white;
+        background-blend-mode: multiply;
+        opacity: 0.95;
+    }
 }
 
 .logo-flex {
