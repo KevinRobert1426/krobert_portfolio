@@ -38,10 +38,14 @@
         transform: translateY(-100%) translateY(4px);
     }
 
-    .is-scrolling-up &{
+    .is-scrolling-up & {
         background: white;
         background-blend-mode: multiply;
         opacity: 0.95;
+    }
+
+    .header-is-top & {
+        background: none;
     }
 }
 
@@ -68,7 +72,7 @@
     text-transform: uppercase;
     font-style: italic;
     transition-duration: 0.3s;
-	transition-property: transform;
+    transition-property: transform;
 
     @media screen and (min-width: $breakpoint-sm) {
         display: block;
@@ -210,11 +214,15 @@
     text-align: center;
     font-weight: 500;
     font-style: italic;
-    background-image: linear-gradient(to right, var(--color-secondary) 0, var(--color-secondary) 100%);
+    background-image: linear-gradient(
+        to right,
+        var(--color-secondary) 0,
+        var(--color-secondary) 100%
+    );
     background-position: 0 0.3em;
     background-size: 0 40%;
     background-repeat: no-repeat;
-    transition: background .5s;
+    transition: background 0.5s;
 
     &:hover {
         background-size: 100% 40%;

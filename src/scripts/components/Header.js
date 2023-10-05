@@ -52,6 +52,13 @@ export default class Header {
     } else {
       this.html.classList.remove('header-is-hidden');
     }
+
+    if (this.scrollPosition == 0) {
+      this.html.classList.add('header-is-top');
+      console.log(this.scrollPosition);
+    } else {
+      this.html.classList.remove('header-is-top');
+    }
   }
 
   /**

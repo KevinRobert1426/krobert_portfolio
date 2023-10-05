@@ -1,7 +1,7 @@
 {% include '_partials/_header.html' %}
 <section class="hero-propos">
     <div class="wrapper">
-        <div class="hero-content">
+        <div class="hero-content" data-scrolly="fromLeft">
             <div class="titre">
                 <h1>Kevin Robert</h1>
                 <h3 class="tagline">Développeur/Designer junior</h3>
@@ -10,13 +10,13 @@
                 Je suis un finissant de la technique d’intégration multimédias à la recherche d’un stage de fin d’études. Au cours de mes études, j’ai développé
                 une affinité pour le développement web et j’aimerais en faire mon métier.
             </p>
-            <div class="graffiti">
+            <div class="graffiti" data-scrolly="scale">
                 <img src="assets/images/graffiti-moi.png" alt="Moi" />
                 <img src="assets/images/graffiti-fleche.png" alt="fleche" />
             </div>
         </div>
     </div>
-    <img src="assets/images/kevin.jpg" alt="Kevin Robert" />
+    <img src="assets/images/kevin.jpg" alt="Kevin Robert" data-scrolly="fromBottom" />
 </section>
 
 <section class="resume">
@@ -25,8 +25,8 @@
 
         <div class="cards">
             <div>
-                <div class="card card-margin-left">
-                    <h3 class="legende legende-absolute">
+                <div class="card card-margin-left" data-scrolly="fromLeft">
+                    <h3 class="legende legende-absolute" data-scrolly="fromRight">
                         Patient <br />
                         Adaptatif
                     </h3>
@@ -41,14 +41,14 @@
                     </ul>
                 </div>
 
-                <h3 class="legende">
+                <h3 class="legende" data-scrolly="fromBottom">
                     Perséverant <br />
                     Soucieux <br />
                     Humble
                 </h3>
             </div>
 
-            <div class="card card-margin-top">
+            <div class="card card-margin-top" data-scrolly="fromRight">
                 <h3 class="legende">Logiciels</h3>
                 <ul>
                     <li>HTML</li>
@@ -68,7 +68,7 @@
     </div>
 </section>
 
-<section class="loisirs">
+<section class="loisirs" data-scrolly="fromBottom">
     <div class="wrapper">
         <h2>Loisirs</h2>
         <div>
