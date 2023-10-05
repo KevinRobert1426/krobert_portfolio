@@ -6,7 +6,7 @@ export default class Scrolly {
   constructor(element) {
     this.element = element;
     this.options = {
-      rootMargin: '-250px',
+      rootMargin: '-150px',
     };
     this.init();
   }

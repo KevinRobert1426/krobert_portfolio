@@ -1,7 +1,7 @@
 {% include '_partials/_header.html' %}
-<section class="hero-projet">
+<section class="hero-projet" data-scrolly="scale">
     <img src="assets/images/hero_baie-sainte-catherine.jpg" alt="Baie-Sainte-Catherine" />
-    <div class="wrapper">
+    <div class="wrapper" data-scrolly="fromLeft">
         <h1>Refonte du site web de la Baie-Sainte-Catherine</h1>
         <h3 class="tagline">Développement web | Design</h3>
         <a href="#" class="btn">Visiter le site web</a>
@@ -14,11 +14,11 @@
             <div>
                 <div class="card card-margin-left" data-scrolly="fromLeft">
                     <h3 class="legende legende-absolute">Travail étudiant</h3>
-                    <h3 class="legende legende-absolute absolute-bottom">Crédit : unsplash</h3>
+                    <h3 class="legende legende-absolute absolute-bottom" data-scrolly="fromRight">Crédit : unsplash</h3>
                     <h3 class="legende">Description</h3>
                     <p>Pour ce projet, j'ai refait un site de A à Z en commençant par le design, pour ensuite le programmer.</p>
                 </div>
-                <div class="card card-secondaire" data-scrolly="fromBottom">
+                <div class="card card-secondaire" data-scrolly="fromLeft">
                     <h3 class="legende">Objectif</h3>
                     <ul>
                         <li>Figma</li>
@@ -29,11 +29,11 @@
                 </div>
             </div>
 
-            <video src="assets/videos/video_baie-sainte-catherine.mp4" loop="loop" autoplay="autoplay" muted playsinline></video>
+            <video src="assets/videos/video_baie-sainte-catherine.mp4" loop="loop" autoplay="autoplay" muted playsinline data-scrolly="scale"></video>
         </div>
 
         <div class="info-flex">
-            <div class="swiper-legende">
+            <div class="swiper-legende" data-scrolly="fromLeft">
                 <h3 class="legende">Galerie</h3>
                 <div class="carousel swiper swiper-galerie" data-component="Carousel" data-loop data-autoplay data-gap="0">
                     <div class="swiper-wrapper">
@@ -51,7 +51,7 @@
                     <p>Pour ce projet, j'ai commencé par rechercher une esthétique qui s'inspire de la nature tout en restant professionnelle.</p>
                 </div>
 
-                <div class="card card-secondaire" data-scrolly="fromBottom">
+                <div class="card card-secondaire" data-scrolly="fromLeft">
                     <h3 class="legende">Compétence</h3>
                     <p>
                         Ce site m'a permis d'apprendre comment concevoir un design fonctionnel pour la programmation web, ainsi que quelques composantes
@@ -78,8 +78,8 @@
                 <svg class="icon icon--md">
                     <use xlink:href="#icon-zoom"></use>
                 </svg>
-                <img src="assets/images/code_baie-sainte-catherine.jpg" alt="Code HTML" class="modal-image" />
-                <p>Exemple de sctructure HTML</p>
+                <img src="assets/images/code_baie-sainte-catherine.jpg" alt="Code HTML" class="modal-image" data-scrolly="scale" />
+                <p data-scrolly="fromLeft">Exemple de sctructure HTML</p>
                 <div class="modal">
                     <img src="assets/images/code_baie-sainte-catherine.jpg" alt="Code HTML" class="modal-content" />
                 </div>
@@ -89,8 +89,8 @@
                 <svg class="icon icon--md">
                     <use xlink:href="#icon-zoom"></use>
                 </svg>
-                <img src="assets/images/code-scss.jpg" alt="Code SCSS" class="modal-image" />
-                <p>Exemple de sctructure SCSS</p>
+                <img src="assets/images/code-scss.jpg" alt="Code SCSS" class="modal-image" data-scrolly="scale" />
+                <p data-scrolly="fromLeft">Exemple de sctructure SCSS</p>
                 <div class="modal">
                     <img src="assets/images/code-scss.jpg" alt="Code HTML" class="modal-content" />
                 </div>
@@ -100,15 +100,15 @@
                 <svg class="icon icon--md">
                     <use xlink:href="#icon-zoom"></use>
                 </svg>
-                <img src="assets/images/code-javascript.jpg" alt="Code JavaScript" class="modal-image" />
-                <p>Exemple de JavaScript</p>
+                <img src="assets/images/code-javascript.jpg" alt="Code JavaScript" class="modal-image" data-scrolly="scale" />
+                <p data-scrolly="fromLeft">Exemple de JavaScript</p>
                 <div class="modal">
                     <img src="assets/images/code-javascript.jpg" alt="Code HTML" class="modal-content" />
                 </div>
             </div>
         </div>
 
-        <div class="swiper-legende">
+        <div class="swiper-legende" data-scrolly="scale">
             <h3 class="legende">Responsive</h3>
             <div class="carousel swiper swiper-responsive" data-component="Carousel" data-loop data-gap="0" data-autoplay="">
                 <div class="swiper-wrapper">
@@ -125,7 +125,7 @@
             </div>
         </div>
 
-        <a href="#" class="btn">Visiter le site web</a>
+        <a href="#" class="btn" data-scrolly="scale">Visiter le site web</a>
     </div>
 </section>
 {% include '_partials/_footer.html' %}

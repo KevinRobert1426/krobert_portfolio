@@ -79,7 +79,7 @@
         video {
             max-width: 676px;
             border: 2px solid var(--color-black);
-            transform: rotate(-5.75deg);
+            rotate: -7.5deg;
         }
     }
 
@@ -107,7 +107,7 @@
     .btn {
         display: block;
         margin: 0 auto 110px;
-        transform: rotate(4.5deg);
+        rotate: 4.5deg;
     }
 }
 
