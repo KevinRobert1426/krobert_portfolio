@@ -44,7 +44,7 @@
 }
 
 .loisirs {
-    padding: 100px 0;
+    padding: 100px 0 50px;
     background-color: var(--color-bg-secondary);
 
     .wrapper {
@@ -69,7 +69,7 @@
 }
 
 .loisir-1 {
-    margin-left: 100px;
+    margin-left: 150px;
     width: 800px;
     display: flex;
     flex-direction: column;
@@ -78,12 +78,12 @@
 
     .image {
         width: 100%;
-        max-height: 340px;
+        max-height: 260px;
     }
 
     .legende-graffiti {
         max-width: 530px;
-        height: 144px;
+        height: 120px;
     }
 }
 
@@ -97,17 +97,17 @@
         rotate: 4deg;
         aspect-ratio: 1 / 1;
         object-position: 0 100%;
-        max-width: 395px;
+        max-width: 300px;
     }
 
     .legende-graffiti {
         max-width: 518px;
-        height: 184px;
+        height: 162px;
     }
 }
 
 .loisir-3 {
-    max-width: 489px;
+    max-width: 423px;
     display: flex;
     flex-direction: column;
 
@@ -118,7 +118,7 @@
     }
 
     .legende-graffiti {
-        max-width: 487px;
+        max-width: 380px;
         rotate: 6deg;
     }
 }
