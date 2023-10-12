@@ -17,6 +17,14 @@ h1 {
     font-style: italic;
     text-transform: uppercase;
     margin: 0;
+
+    @media screen and (max-width: $breakpoint-ml) {
+        font-size: var(--font-size-h1-tablette);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-h1-mobile);
+    }
 }
 
 h2 {
@@ -31,6 +39,14 @@ h3 {
     margin: 0;
     font-style: italic;
     font-weight: 600;
+
+    @media screen and (max-width: $breakpoint-ml) {
+        font-size: var(--font-size-h3-tablette);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-h3-mobile);
+    }
 }
 
 h4 {

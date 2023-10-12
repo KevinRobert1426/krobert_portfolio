@@ -17,4 +17,12 @@
         background-color: var(--color-white);
         scale: 0.85;
     }
+
+    @media screen and (max-width: $breakpoint-ml) {
+        font-size: var(--font-size-btn-tablette);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-btn-mobile);
+    }
 }
