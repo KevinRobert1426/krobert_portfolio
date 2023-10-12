@@ -37,7 +37,11 @@
         height: 2px;
         background-color: var(--color-black);
         width: 50%;
-        margin-top: 20%;
+        margin-top: 350px;
+
+        @media screen and (max-width: $breakpoint-ml) {
+            display: none;
+        }
     }
 }
 

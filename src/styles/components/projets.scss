@@ -1,14 +1,31 @@
 .projets {
     padding: 100px 0 165px 0;
 
+    @media screen and (max-width: 1450px) {
+        padding: 50px 0 85px 0;
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
         gap: 200px;
+
+        @media screen and (max-width: 1450px) {
+            gap: 100px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            gap: 50px;
+            padding: 0;
+        }
     }
 
     h2 {
         margin: 0;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 0 25px;
+        }
     }
 }
 
@@ -27,6 +44,13 @@
 
     img {
         border: 2px solid var(--color-black);
+        max-width: 777px;
+        object-fit: cover;
+
+        @media screen and (max-width: 1450px) {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 }
 
@@ -36,6 +60,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media screen and (max-width: 1450px) {
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &::before {
         content: '';
@@ -48,6 +78,11 @@
         z-index: -1;
         width: 120%;
         height: 400px;
+
+        @media screen and (max-width: 1450px) {
+            width: 100%;
+            height: 200px;
+        }
     }
 
     .image-absolute {
@@ -59,6 +94,10 @@
         rotate: 7.5deg;
         z-index: 3;
         object-fit: cover;
+
+        @media screen and (max-width: 1700px) {
+            display: none;
+        }
     }
 }
 
@@ -69,6 +108,19 @@
     align-items: flex-end;
     text-align: right;
     height: 400px;
+
+    @media screen and (max-width: 1450px) {
+        height: 200px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 0 25px;
+    }
 
     p {
         color: var(--color-white);
@@ -88,12 +140,24 @@
     margin: 0 0 0 250px;
     width: 35%;
     z-index: -1;
+    @media screen and (max-width: 1450px) {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .projet-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1450px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 0 25px;
+    }
 }
 
 .projet-logiciels {
@@ -103,6 +167,14 @@
     box-shadow: 13px 11px 4px 0px var(--color-black);
     padding: 13px 30px;
     width: fit-content;
+
+    @media screen and (max-width: 1450px) {
+        gap: 15px;
+        .icon {
+            height: 1.5em;
+            width: 1.5em;
+        }
+    }
 }
 
 .images-colonne {
@@ -116,6 +188,10 @@
         aspect-ratio: 1/1;
         object-fit: cover;
     }
+
+    @media screen and (max-width: 1700px) {
+        display: none;
+    }
 }
 
 /* ==========================================================================
@@ -124,8 +200,15 @@
 
 .projet:nth-child(2n + 1) {
     align-items: flex-end;
+
     .projet-flex {
         flex-direction: row-reverse;
+
+        @media screen and (max-width: 1450px) {
+            margin-top: 25px;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .image-absolute {
             position: absolute;
@@ -140,11 +223,20 @@
             left: initial;
             right: 0;
             width: 120%;
+
+            @media screen and (max-width: 1450px) {
+                width: 100%;
+            }
         }
     }
 
     .projet-header {
         flex-direction: row-reverse;
+
+        @media screen and (max-width: 1450px) {
+            flex-direction: column;
+            align-items: end;
+        }
 
         h4 {
             text-align: right;
@@ -154,6 +246,19 @@
     .projet-content {
         align-items: start;
         text-align: left;
+
+        @media screen and (max-width: 1450px) {
+            height: 200px;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            padding: 15px 0;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 0 25px;
+        }
     }
 
     .projet-type {
@@ -162,5 +267,10 @@
         box-shadow: 13px 11px 4px 0px var(--color-black);
         margin: 0 250px 0 0;
         width: 35%;
+
+        @media screen and (max-width: 1450px) {
+            width: 100%;
+            margin: 0;
+        }
     }
 }

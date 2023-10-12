@@ -17,4 +17,12 @@ body {
     font-size: var(--font-size-content);
     line-height: 1.6;
     overflow-x: hidden;
+
+    @media screen and (max-width: $breakpoint-ml) {
+        font-size: var(--font-size-content-tablette);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-content-mobile);
+    }
 }
