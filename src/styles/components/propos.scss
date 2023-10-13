@@ -69,6 +69,10 @@
     }
 
     padding-bottom: 200px;
+
+    @media screen and (max-width: 1580px) {
+        padding-bottom: 300px;
+    }
 }
 
 .loisirs {
@@ -113,6 +117,15 @@
         max-width: 530px;
         height: 120px;
     }
+
+    @media screen and (max-width: 1600px) {
+        width: 450px;
+
+        .legende-graffiti {
+            max-width: 250px;
+            height: 60px;
+        }
+    }
 }
 
 .loisir-2 {
@@ -132,6 +145,15 @@
         max-width: 518px;
         height: 162px;
     }
+
+    @media screen and (max-width: 1600px) {
+        max-width: 275px;
+
+        .legende-graffiti {
+            max-width: 275px;
+            height: 90px;
+        }
+    }
 }
 
 .loisir-3 {
@@ -148,5 +170,14 @@
     .legende-graffiti {
         max-width: 380px;
         rotate: 6deg;
+    }
+
+    @media screen and (max-width: 1600px) {
+        max-width: 300px;
+
+        .legende-graffiti {
+            max-width: 300px;
+            height: 120px;
+        }
     }
 }
