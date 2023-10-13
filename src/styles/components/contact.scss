@@ -1,10 +1,20 @@
 .contact {
     padding-top: 70px;
 
+    @media screen and (max-width: $breakpoint-ml) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
     .wrapper {
         display: flex;
         justify-content: space-between;
         gap: 60px;
+
+        @media screen and (max-width: $breakpoint-ml) {
+            flex-direction: column;
+            padding: 0 25px;
+        }
     }
 
     .wrapper::before {
@@ -14,6 +24,10 @@
         height: 580px;
         order: 2;
         background-color: var(--color-black);
+
+        @media screen and (max-width: $breakpoint-ml) {
+            display: none;
+        }
     }
 }
 
@@ -23,6 +37,10 @@
     flex-direction: column;
     gap: 50px;
     margin-bottom: 200px;
+
+    @media screen and (max-width: $breakpoint-ml) {
+        margin-bottom: 0;
+    }
 
     h1 {
         margin-bottom: 0;
