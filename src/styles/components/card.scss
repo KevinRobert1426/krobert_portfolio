@@ -1,6 +1,11 @@
 .cards {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1580px) {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
 
 .card {
@@ -37,6 +42,17 @@
     background-color: var(--color-bg-secondary);
     color: var(--color-black);
     max-width: 513px;
+
+    @media screen and (max-width: 925px) {
+        max-width: 375px;
+        left: -315px;
+    }
+
+    @media screen and (max-width: 680px) {
+        max-width: 275px;
+        left: -45px;
+        bottom: -200px;
+    }
 }
 
 .card::before {
@@ -55,14 +71,32 @@
 .card-margin-left {
     margin-left: 100px;
     padding-right: 160px;
+
+    @media screen and (max-width: 1580px) {
+        margin-left: 0;
+        padding-right: 0;
+    }
 }
 
 .card-margin-top {
     margin-top: -150px;
 
+    @media screen and (max-width: 1580px) {
+        margin-top: 0;
+        margin-left: auto;
+    }
+
     ul {
         padding-right: 145px;
         margin-left: 80px;
+
+        @media screen and (max-width: 1580px) {
+            margin-left: 80px;
+        }
+
+        @media screen and (max-width: 680px) {
+            margin-left: 35px;
+        }
     }
 }
 
@@ -84,4 +118,15 @@
     position: absolute;
     top: -88px;
     right: -265px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding-right: 80px;
+        top: -60px;
+        right: -160px;
+    }
+
+    @media screen and (max-width: 490px) {
+        padding-right: 20px;
+        right: -15px;
+    }
 }
