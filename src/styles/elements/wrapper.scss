@@ -6,4 +6,12 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 var(--spacing-xl);
+
+    @media screen and (max-width: 1450px) {
+        padding: 0 50px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 0 25px;
+    }
 }
