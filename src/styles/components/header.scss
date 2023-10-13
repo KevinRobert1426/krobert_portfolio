@@ -17,6 +17,10 @@
         height: var(--header-height);
         border-top: 2px solid var(--color-black);
         border-bottom: 2px solid var(--color-black);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 1rem 5rem;
+        }
     }
 
     &::before {
@@ -67,7 +71,7 @@
     font-family: var(--font-primary);
     font-size: var(--font-size-nav);
     font-weight: 700;
-    display: none;
+    display: block;
     color: var(--color-black);
     text-transform: uppercase;
     font-style: italic;
@@ -159,6 +163,7 @@
     z-index: 1;
     transition: all 0.6s $ease-in-out-back;
     transform: translateY(200%);
+    display: none;
 
     @media screen and (min-width: $breakpoint-ml) {
         background: none;
@@ -173,6 +178,7 @@
 
     .nav-is-active & {
         transform: translateY(0);
+        display: flex;
     }
 
     ul {
