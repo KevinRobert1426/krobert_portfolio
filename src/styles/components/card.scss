@@ -50,7 +50,7 @@
 
     @media screen and (max-width: 680px) {
         max-width: 275px;
-        left: -45px;
+        left: 12px;
         bottom: -200px;
     }
 }
@@ -90,12 +90,8 @@
         padding-right: 145px;
         margin-left: 80px;
 
-        @media screen and (max-width: 1580px) {
-            margin-left: 80px;
-        }
-
         @media screen and (max-width: 680px) {
-            margin-left: 35px;
+            padding-right: 145px;
         }
     }
 }
