@@ -11,6 +11,7 @@ export default class Modal {
     this.img = this.element.querySelector('.modal-image');
     this.content = this.element.querySelector('.modal-content'); // Ajout de la recherche du contenu spécifique
 
+
     this.img.addEventListener('click', this.openModal.bind(this));
 
     this.modal.addEventListener('click', (event) => {
@@ -25,6 +26,7 @@ export default class Modal {
     this.modal.style.display = 'block';
     this.modal.classList.add('is-active');
     this.content.style.display = 'block'; // Afficher le contenu spécifique
+
   }
 
   // Function pour fermé la modal

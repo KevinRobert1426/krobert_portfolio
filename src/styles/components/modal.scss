@@ -15,7 +15,7 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 5;
+    z-index: 15;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -28,6 +28,15 @@
 
 .modal.is-active {
     display: block;
+
+    .modal-x {
+        display: block;
+        margin-left: auto;
+        margin-bottom: auto;
+        cursor: pointer;
+        color: var(--color-white);
+    }
+    
 }
 
 /* Modal Content (Image) */
@@ -56,6 +65,7 @@
 /* Largeur de l'image pour les plus petits écran */
 @media only screen and (max-width: 700px) {
     .modal-content {
-        width: 100%;
+        width: 50%;
+        height: 30%;
     }
 }
