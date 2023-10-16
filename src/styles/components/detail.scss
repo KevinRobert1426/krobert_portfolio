@@ -6,6 +6,10 @@
     position: relative;
     height: 680px;
 
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 500px;
+    }
+
     img {
         height: 100%;
         position: absolute;
@@ -28,6 +32,14 @@
         .tagline {
             margin-left: initial;
         }
+
+        @media screen and (max-width: 1580px) {
+            padding: 50px;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 25px;
+        }
     }
 }
 
@@ -44,6 +56,19 @@
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width: 1680px) {
+            flex-direction: column;
+            gap: 45px;
+
+            .info-content {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-bottom: 75px;
+        }
+
         .swiper {
             margin: 0;
         }
@@ -51,17 +76,38 @@
         .card-margin-left {
             padding: 0 0 100px 0;
             max-width: 600px;
+
+            @media screen and (max-width: 1580px) {
+                margin-left: 100px;
+            }
+
+            @media screen and (max-width: 870px) {
+                margin-left: 0;
+            }
         }
 
         .legende-absolute {
             padding: 12px 20px;
             top: -50px;
+
+            @media screen and (max-width: 1050px) {
+                right: -100px;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                right: 8px;
+                top: -80px;
+            }
         }
 
         .absolute-bottom {
             top: initial;
             bottom: -46px;
             right: -92px;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                right: 150px;
+            }
         }
 
         .card-secondaire {
@@ -74,18 +120,37 @@
             &::before {
                 content: none;
             }
+
+            @media screen and (max-width: 1050px) {
+                ul {
+                    padding-right: 150px;
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                margin-left: 50px;
+                margin-top: 85px;
+            }
         }
 
         video {
             max-width: 676px;
             border: 2px solid var(--color-black);
             rotate: -7.5deg;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 100%;
+            }
         }
     }
 
     .info-flex:nth-child(2n) {
         .card-margin-left {
             margin-left: 320px;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                margin-left: 0;
+            }
         }
         .card-secondaire {
             margin-top: -100px;
@@ -106,7 +171,7 @@
 
     .btn {
         display: block;
-        margin: 0 auto 110px;
+        margin: 25px auto 110px;
         rotate: 4.5deg;
     }
 }
@@ -114,6 +179,15 @@
 .flex-modal {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1680px) {
+        gap: 30px;
+    }
+
+    @media screen and (max-width: $breakpoint-ml) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .modal-conteneur {

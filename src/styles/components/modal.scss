@@ -5,6 +5,10 @@
     border: 2px solid var(--color-black);
     display: block;
     object-fit: cover;
+
+    @media screen and (max-width: 1680px) {
+        width: 100%;
+    }
 }
 
 /* La modal (background) */
