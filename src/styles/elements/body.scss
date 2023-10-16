@@ -5,7 +5,9 @@
    ========================================================================== */
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    @media screen and (max-width: $breakpoint-ml) {
+        overflow-x: hidden;
+    }
 }
 
 body {

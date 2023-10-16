@@ -86,9 +86,13 @@
         margin-left: auto;
     }
 
+    @media screen and (max-width: 680px) {
+        margin-left: 0;
+    }
+
     ul {
         padding-right: 145px;
-        margin-left: 80px;
+        margin-left: 35px;
 
         @media screen and (max-width: 680px) {
             padding-right: 145px;
