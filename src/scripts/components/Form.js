@@ -31,11 +31,36 @@ export default class Form {
     event.preventDefault();
 
     if (this.validate()) {
-      console.log('success');
-      // envoi ajax du formulaire
       this.showConfirmation();
+      // Construire un objet FormData à partir du formulaire
+      const formData = new FormData(this.element);
+
+      // Remplacez 'YOUR_GETFORM_IO_URL' par l'URL d'action fournie par Getform.io
+      const getformUrl =
+        'https://getform.io/f/3a8db9f3-697c-4de3-a4d7-b3b0cc999efd';
+
+      fetch(getformUrl, {
+        method: 'POST',
+        body: formData,
+      })
+        .then((response) => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error("Erreur lors de l'envoi du formulaire");
+          }
+        })
+        .then((data) => {
+          // Réussite - affichez une confirmation ou effectuez d'autres actions
+          console.log('Succès', data);
+          this.showConfirmation();
+        })
+        .catch((error) => {
+          // Gestion des erreurs
+          console.error('Erreur', error);
+        });
     } else {
-      console.log('fail');
+      console.log('Échec de la validation');
     }
   }
 
