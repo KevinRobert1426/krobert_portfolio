@@ -1,6 +1,7 @@
 .accueil {
     height: 987px;
     padding: 50px 0;
+    overflow-x: initial;
 
     @media screen and (max-width: $breakpoint-ml) {
         height: fit-content;

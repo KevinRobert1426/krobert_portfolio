@@ -5,7 +5,6 @@
    ========================================================================== */
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -17,7 +16,6 @@ body {
     font-family: var(--font-primary);
     font-size: var(--font-size-content);
     line-height: 1.6;
-    overflow-x: hidden;
 
     @media screen and (max-width: $breakpoint-ml) {
         font-size: var(--font-size-content-tablette);
@@ -25,6 +23,9 @@ body {
 
     @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--font-size-content-mobile);
-        overflow-x: hidden;
     }
+}
+
+section {
+    overflow-x: hidden;
 }
