@@ -29,7 +29,11 @@
     max-width: 1140px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 45px;
+
+    p {
+        margin: 0;
+    }
 
     @media screen and (max-width: $breakpoint-sm) {
         gap: 30px;
