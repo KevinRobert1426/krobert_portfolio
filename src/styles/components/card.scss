@@ -92,10 +92,11 @@
 
     ul {
         padding-right: 145px;
-        margin-left: 35px;
+        margin-left: 75px;
 
         @media screen and (max-width: 680px) {
             padding-right: 145px;
+            margin-left: 35px;
         }
     }
 }
