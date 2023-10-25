@@ -16,7 +16,6 @@
     display: none;
     position: fixed;
     z-index: 15;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -42,8 +41,8 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 750px;
-    height: 750px;
+    width: fit-content;
+    height: 100vh;
 }
 
 /* Animation */

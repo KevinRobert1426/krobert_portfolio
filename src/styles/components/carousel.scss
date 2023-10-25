@@ -9,14 +9,16 @@
     position: static;
 
     .swiper-pagination-bullet-active {
-        border-width: calc(var(--size, 10px) / 2);
+        width: 25px;
+        height: 25px;
         background: var(--color-white);
+        border-color: var(--color-black);
     }
 }
 .swiper-pagination-bullet {
     --size: 25px;
 
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-black);
     border-radius: 100%;
     height: var(--size);
     margin: 0 20px;
