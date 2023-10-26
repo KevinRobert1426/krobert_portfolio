@@ -56,9 +56,7 @@
 }
 
 .logo {
-    font-family: var(--font-primary);
-    font-size: var(--font-size-nav);
-    font-weight: 700;
+    font-size: var(--font-size-content);
     display: block;
     color: var(--color-black);
     text-transform: uppercase;
@@ -171,7 +169,7 @@
     ul {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         list-style: none;
         padding: 0;
         width: 100%;
@@ -224,6 +222,7 @@
     }
 
     @media screen and (min-width: $breakpoint-ml) {
+        font-size: inherit;
         padding: 0 31px;
         position: relative;
     }
@@ -234,6 +233,10 @@
 
     .header {
         overflow-x: initial;
+    }
+
+    .nav-primary__item-remove {
+        display: none;
     }
 }
 
